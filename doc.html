@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            background-color: whitesmoke;
+            align-content: center;
+            text-align: center;
+        }
+        div{
+            background-color: #fff;
+
+        }
+      button {
+        border: solid 3px rgb(24, 6, 102);
+        color: brown;
+        background-color: aqua;
+        margin: 60px;
+        width: 150px;
+        height: 80px;
+        border-radius: 35px;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        box-shadow: 0 0 10px grey;
+        margin-left: 43%;
+      }
+
+      button:hover {
+        background-color: bisque ; 
+        color: rgb(49, 47, 47);
+        transform:scale(1,1.5) ;
+        box-shadow: 0 0 10px grey;
+      }
+      p{
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="k">
+    <h1 class="num">Assingment</h1>
+    <p class="one">This is my assingment.</p>
+    <p id="two">This is my assingment.</p>
+    <button onclick="myFunction()">Click here</button>
+    <script>
+      function myFunction() {
+        document.getElementsByClassName("one").innerText =
+          "I have finished my assingment.";
+
+        let two = document.getElementById("two");
+
+        two.innerText = "I submitted.";
+
+        two.style.color = "green";
+        two.style.fontSize = "40px";
+      }
+    </script>
+    
+</div>
+  </body>
+</html>
